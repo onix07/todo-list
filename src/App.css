@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* TO DO LIST FORM */
+.item-header{
+    margin: 15px;
+}
+#todoList-form {
+  padding-top: 50px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+#todoList-form input {
+  height: 30px;
+  width: 80%;;
+  padding-left: 10px;
+  background-color: #F2F3F8;
+  border: none;
+
+}
+
+#todoList-form button {
+  padding: 5px 40px;
+  border: none;
+  background-color: #6B7FD7;
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 15px;
+}
+
+/* TO DO LIST ITEMS  */
+.container{
+    width: 100%;
+    max-width:630px;
+    margin: 0 auto;
+}
+.done {
+  text-decoration: line-through;
+  color: #858585;
+}
+
+.done input[type=text] {
+  color: #858585;
+  width: 100%;
+}
+
+
+.del-btn {
+  border: none;
+  background: none;
+  color: #37392E;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.parent-list {
+  background-color: #BFC1D1;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  /* justify-content: space-between; */
+}
+.parent-list .child{
+    text-align: left;
+    display: flex;
+    margin-bottom: 10px;
+}
+.parent-list .del-item-btn{
+    float: right;
+}
+.parent-list .child input[type="checkbox"] {
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 7px;
+
+}
+.parent-list input[type="checkbox"] {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  background: none;
+}
+.parent-list .no-child{
+    display: flex;
+}
+.parent-list .no-child .item-header{
+    margin: 0;
+    width: 100%;
+}
+.parent-list input[type="text"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 5px;;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  /* justify-content: flex-start; */
+   width: 100%;
+}
+
+.parent-list input[type="text"]:focus {
+  background-color: #F2F3F8;
+  color: #37392E;
+}
+
+.parent-list button {
+  justify-content: flex-end;
+}
+
+/* MEDIA QUERY  */
+
+@media screen and (max-width: 480px) {
+  .parent-list {
+    width: 90%;
+  }
+}
